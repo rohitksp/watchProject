@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: url(/project_image/watchProjectImage.jpg) no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.containerForMultiOptions {
+  border: 3px solid black;
+  background: rgb(248, 246, 246);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 1.5em;
+  padding: 20px;
+  margin: 20px 0 20px 0;
+  box-shadow: 5px 5px black;
+  position: relative;
+}
+
+.containerForDateTime {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  color: black;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 2.3em;
+  border: 5px solid black;
+  transition: .3s;
+}
+
+.containerForDateTime:hover {
+  background: black;
+  color: rgb(248, 246, 246);
+}
+
+.timeValue {
+  display: flex;
+}
+
+.dateValue {
+  display: flex;
+}
+
+.stopWatchTimer {
+  border: 5px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  font-size: 3.5em;
+  transition: .3s;
+}
+
+.stopWatchTimer:hover {
+  background: black;
+  color: rgb(248, 246, 246);
+}
+
+.containerForStopwatch {
+  display: inline-block;
+  text-align: center;
+}
+
+#playButton {
+  margin: 20px 40px 0 0;
+  border-radius: 10px;
+  padding: 5px 20px 5px 20px;
+  background: transparent;
+  border: 2px solid greenyellow;
+  transition: .3s;
+  color: rgb(6, 247, 6);
+}
+
+#playButton:hover {
+  background: greenyellow;
+  color: white;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+#play {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+#pauseButton {
+  margin: 20px 40px 0 0;
+  border-radius: 10px;
+  padding: 5px 20px 5px 20px;
+  background: transparent;
+  border: 2px solid orange;
+  transition: .3s;
+  color: orange;
+}
+
+#pauseButton:hover {
+  background: orange;
+  color: white;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+#pause {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+#resetButton {
+  margin: 20px 0 0 40px;
+  border-radius: 10px;
+  padding: 5px 20px 5px 20px;
+  background: transparent;
+  border: 2px solid red;
+  transition: .3s;
+  color: red;
+}
+
+#resetButton:hover {
+  background: red;
+  color: white;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+#reset {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.containerForOtherThings {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: rgb(248, 246, 246);
+  border: 3px solid black;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px black;
+}
+
+#changeDisplayFormat {
+  font-size: 1.5em;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: pink;
+  font-weight: 700;
+  background: transparent;
+  border: 2px solid pink;
+  transition:.3s;
+}
+
+#changeDisplayFormat:hover {
+  cursor: pointer;
+  background: pink;
+  color: white;
+  border: 2px solid pink;
+}
+
+#setAlarm {
+  font-size: 1.5em;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: rgb(10, 193, 249);
+  font-weight: 700;
+  background: transparent;
+  border: 2px solid rgb(9, 220, 239);
+  transition:.3s;
+}
+
+#setAlarm:hover {
+  cursor: pointer;
+  background: rgb(9, 220, 239);
+  color: white;
+  border: 2px solid white;
+}
+
+#timeZone {
+  font-size: 1.5em;
+  padding: 5px;
+  border-radius: 5px;
+  color: rgb(98, 91, 236);;
+  font-weight: 700;
+  background: transparent;
+  border: 2px solid rgb(98, 91, 236);
+  transition:.3s;
+  width: 180px;
+}
+
+#timeZone:hover {
+  background: rgb(98, 91, 236);;
+  color: white;
+}
+
+.containerForSetAlarm {
+  display: none;
+  margin-top: 10px;
+}
+
+#setAlarmTime {
+  height: 50px;
+  width: 85%;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 2em;
+  border: 2px solid black;
+}
+
+#saveAlarm {
+  height: 50px;
+  width: 20%;
+  border-radius: 5px;
+  font-size: 1em;
+  padding: 5px !important;
+  border: 2px solid green;
+  color: green;
+  font-weight: bold;
+  background: white;
+  transition: .3s;
+  margin-left: 10px;
+}
+
+#saveAlarm:hover {
+  cursor: pointer;
+  background: green;
+  color: white;
+  border: 2px solid white;
+}
+
+.containerForShowAlarms {
+  display: none;
+  margin-top: 10px;
+  align-items: center;
+  height: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-style: italic;
+  border: 2px solid black;
+  background: #f9f9f9;
+  transition:.3s;
+}
+
+.alarmCount {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid grey;
+}
+
+.deleteAlarm {
+  color: red;
+  background: transparent;
+  border: 1px solid red;
+  transition: .3s;
+  border-radius: 5px;
+  padding: 2px;
+  margin: 5px 0 5px 20px;
+}
+
+.deleteAlarm:hover {
+  color: white;
+  background: red;
+  cursor: pointer;
+  border: 2px solid black;
+}
