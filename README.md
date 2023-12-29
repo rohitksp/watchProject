@@ -9,3 +9,4 @@ This watch has multiple features available.
 5. You can set the alarm and it will play at your selected time.
 6. You can add multiple alarms and also you can delete the alarms from the list.
 7. You can also stop the alarm with the help of delete alarm button.
+# watchProject
